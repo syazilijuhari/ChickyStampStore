@@ -218,9 +218,6 @@
             Dim mywriter As New OleDb.OleDbCommand(mysql, myconnection2, mytransaction)
             mywriter.ExecuteNonQuery()
 
-            'run_sql_command("INSERT INTO TBL_ORDER_A173630(FLD_ORDER_ID, FLD_ORDER_DATE, FLD_CUSTOMER_ID, FLD_STAFF_ID) VALUES ('" & orderid & "', '" & orderdate & "', '" & customerid & "', '" & staffid & "')")
-
-
             For i As Integer = 0 To grid_cart.RowCount - 1
                 Dim orderid_details As String = grid_cart(0, i).Value
                 Dim productid_details As String = grid_cart(1, i).Value
