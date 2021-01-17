@@ -202,52 +202,52 @@
     End Sub
 
     Private Sub btn_confirmorder_Click(sender As Object, e As EventArgs) Handles btn_confirmorder.Click
-        MsgBox(txt_orderid.Text)
 
-
-        'Try
-
-        Dim orderid As String = txt_orderid.Text
-        Dim orderdate As String = Date.Today
-        Dim customerid As String = txt_custid.Text
-            Dim staffid As String = cb_staffid.Text
-
-        'Dim mysql As String = "INSERT INTO TBL_ORDER_A173630(FLD_ORDER_ID, FLD_ORDER_DATE, FLD_CUSTOMER_ID, FLD_STAFF_ID) VALUES ('" & orderid & "', '" & orderdate & "', '" & customerid & "', '" & staffid & "')"
-        'Dim mywriter As New OleDb.OleDbCommand(mysql, myconnection2, mytransaction)
-        '    mywriter.ExecuteNonQuery()
-
-        run_sql_command("INSERT INTO TBL_ORDER_A173630(FLD_ORDER_ID, FLD_ORDER_DATE, FLD_CUSTOMER_ID, FLD_STAFF_ID) VALUES ('" & orderid & "', '" & orderdate & "', '" & customerid & "', '" & staffid & "')")
         Dim mytransaction As OleDb.OleDbTransaction
         myconnection2.Open()
         mytransaction = myconnection2.BeginTransaction
 
-        For i As Integer = 0 To grid_cart.RowCount - 1
-            Dim orderid_details As String = grid_cart(0, i).Value
-            Dim productid_details As String = grid_cart(1, i).Value
-            Dim quantity_details As String = grid_cart(2, i).Value
-            Dim price_details As String = grid_cart(3, i).Value
+        Try
 
-            Dim mysql2 As String = "INSERT INTO TBL_ORDER_DETAILS_A173630 VALUES ('" & orderid_details & "', 'SID01' , '" & quantity_details & "', '" & price_details & "')"
-            Dim mywriter2 As New OleDb.OleDbCommand(mysql2, myconnection2, mytransaction)
-            mywriter2.ExecuteNonQuery()
+            Dim orderid As String = txt_orderid.Text
+            Dim orderdate As String = Date.Today
+            Dim customerid As String = txt_custid.Text
+            Dim staffid As String = cb_staffid.Text
 
-        Next
+            Dim mysql As String = "INSERT INTO TBL_ORDER_A173630(FLD_ORDER_ID, FLD_ORDER_DATE, FLD_CUSTOMER_ID, FLD_STAFF_ID) VALUES ('" & orderid & "', '" & orderdate & "', '" & customerid & "', '" & staffid & "')"
+            Dim mywriter As New OleDb.OleDbCommand(mysql, myconnection2, mytransaction)
+            mywriter.ExecuteNonQuery()
 
-        mytransaction.Commit()
+            'run_sql_command("INSERT INTO TBL_ORDER_A173630(FLD_ORDER_ID, FLD_ORDER_DATE, FLD_CUSTOMER_ID, FLD_STAFF_ID) VALUES ('" & orderid & "', '" & orderdate & "', '" & customerid & "', '" & staffid & "')")
+
+
+            For i As Integer = 0 To grid_cart.RowCount - 1
+                Dim orderid_details As String = grid_cart(0, i).Value
+                Dim productid_details As String = grid_cart(1, i).Value
+                Dim quantity_details As String = grid_cart(2, i).Value
+                Dim price_details As String = grid_cart(3, i).Value
+
+                Dim mysql2 As String = "INSERT INTO TBL_ORDER_DETAILS_A173630 VALUES ('" & orderid_details & "', '" & productid_details & "' , '" & quantity_details & "', '" & price_details & "')"
+                Dim mywriter2 As New OleDb.OleDbCommand(mysql2, myconnection2, mytransaction)
+                mywriter2.ExecuteNonQuery()
+
+            Next
+
+            mytransaction.Commit()
             myconnection2.Close()
 
             Beep()
             MsgBox("Transaction succesful!")
             grid_cart.Rows.Clear()
 
-        'Catch ex As Exception
+        Catch ex As Exception
 
-        Beep()
-        ' MsgBox("Problem with transaction:" & vbCrLf & vbCrLf & ex.Message)
-        'mytransaction.Rollback()
-        myconnection2.Close()
+            Beep()
+            MsgBox("Problem with transaction:" & vbCrLf & vbCrLf & ex.Message)
+            mytransaction.Rollback()
+            myconnection2.Close()
 
-        'End Try
+        End Try
 
     End Sub
 

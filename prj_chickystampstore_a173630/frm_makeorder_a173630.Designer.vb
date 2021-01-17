@@ -63,6 +63,8 @@ Partial Class frm_makeorder_a173630
         Me.btn_removeitem = New System.Windows.Forms.Button()
         Me.grid_cart = New System.Windows.Forms.DataGridView()
         Me.gb_ordersum = New System.Windows.Forms.GroupBox()
+        Me.txt_subtotal = New System.Windows.Forms.TextBox()
+        Me.lbl_subtotal = New System.Windows.Forms.Label()
         Me.btn_confirmorder = New System.Windows.Forms.Button()
         Me.txt_totalprice = New System.Windows.Forms.TextBox()
         Me.lbl_productprice = New System.Windows.Forms.Label()
@@ -70,8 +72,6 @@ Partial Class frm_makeorder_a173630
         Me.lbl_orderquantity = New System.Windows.Forms.Label()
         Me.txt_orderquantity = New System.Windows.Forms.TextBox()
         Me.lbl_totalprice = New System.Windows.Forms.Label()
-        Me.txt_subtotal = New System.Windows.Forms.TextBox()
-        Me.lbl_subtotal = New System.Windows.Forms.Label()
         Me.gb_basic.SuspendLayout()
         Me.gb_cust.SuspendLayout()
         CType(Me.grid_customers, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -528,6 +528,10 @@ Partial Class frm_makeorder_a173630
         '
         'grid_cart
         '
+        Me.grid_cart.AllowUserToAddRows = False
+        Me.grid_cart.AllowUserToDeleteRows = False
+        Me.grid_cart.AllowUserToResizeColumns = False
+        Me.grid_cart.AllowUserToResizeRows = False
         Me.grid_cart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.grid_cart.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.grid_cart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -535,6 +539,7 @@ Partial Class frm_makeorder_a173630
         Me.grid_cart.Location = New System.Drawing.Point(9, 24)
         Me.grid_cart.Margin = New System.Windows.Forms.Padding(2)
         Me.grid_cart.Name = "grid_cart"
+        Me.grid_cart.ReadOnly = True
         Me.grid_cart.RowHeadersWidth = 51
         Me.grid_cart.RowTemplate.Height = 24
         Me.grid_cart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -560,6 +565,26 @@ Partial Class frm_makeorder_a173630
         Me.gb_ordersum.TabIndex = 39
         Me.gb_ordersum.TabStop = False
         Me.gb_ordersum.Text = "4. Order Summary"
+        '
+        'txt_subtotal
+        '
+        Me.txt_subtotal.Location = New System.Drawing.Point(163, 119)
+        Me.txt_subtotal.Name = "txt_subtotal"
+        Me.txt_subtotal.ReadOnly = True
+        Me.txt_subtotal.Size = New System.Drawing.Size(173, 26)
+        Me.txt_subtotal.TabIndex = 39
+        '
+        'lbl_subtotal
+        '
+        Me.lbl_subtotal.AutoSize = True
+        Me.lbl_subtotal.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_subtotal.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_subtotal.ForeColor = System.Drawing.Color.Maroon
+        Me.lbl_subtotal.Location = New System.Drawing.Point(76, 126)
+        Me.lbl_subtotal.Name = "lbl_subtotal"
+        Me.lbl_subtotal.Size = New System.Drawing.Size(72, 19)
+        Me.lbl_subtotal.TabIndex = 40
+        Me.lbl_subtotal.Text = "Sub Total"
         '
         'btn_confirmorder
         '
@@ -636,26 +661,6 @@ Partial Class frm_makeorder_a173630
         Me.lbl_totalprice.Size = New System.Drawing.Size(81, 19)
         Me.lbl_totalprice.TabIndex = 35
         Me.lbl_totalprice.Text = "Total Price"
-        '
-        'txt_subtotal
-        '
-        Me.txt_subtotal.Location = New System.Drawing.Point(163, 119)
-        Me.txt_subtotal.Name = "txt_subtotal"
-        Me.txt_subtotal.ReadOnly = True
-        Me.txt_subtotal.Size = New System.Drawing.Size(173, 26)
-        Me.txt_subtotal.TabIndex = 39
-        '
-        'lbl_subtotal
-        '
-        Me.lbl_subtotal.AutoSize = True
-        Me.lbl_subtotal.BackColor = System.Drawing.Color.Transparent
-        Me.lbl_subtotal.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_subtotal.ForeColor = System.Drawing.Color.Maroon
-        Me.lbl_subtotal.Location = New System.Drawing.Point(76, 126)
-        Me.lbl_subtotal.Name = "lbl_subtotal"
-        Me.lbl_subtotal.Size = New System.Drawing.Size(72, 19)
-        Me.lbl_subtotal.TabIndex = 40
-        Me.lbl_subtotal.Text = "Sub Total"
         '
         'frm_makeorder_a173630
         '
