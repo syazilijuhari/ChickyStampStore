@@ -22,6 +22,9 @@ Partial Class frm_insertcustomer_a173630
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_insertcustomer_a173630))
         Me.btn_back = New System.Windows.Forms.Button()
         Me.lbl_title = New System.Windows.Forms.Label()
@@ -83,15 +86,45 @@ Partial Class frm_insertcustomer_a173630
         '
         'grid_customers
         '
+        Me.grid_customers.AllowUserToAddRows = False
+        Me.grid_customers.AllowUserToDeleteRows = False
+        Me.grid_customers.AllowUserToResizeColumns = False
+        Me.grid_customers.AllowUserToResizeRows = False
         Me.grid_customers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.grid_customers.BackgroundColor = System.Drawing.SystemColors.ButtonFace
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid_customers.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.grid_customers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grid_customers.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grid_customers.DefaultCellStyle = DataGridViewCellStyle2
         Me.grid_customers.Location = New System.Drawing.Point(85, 144)
         Me.grid_customers.Margin = New System.Windows.Forms.Padding(2)
         Me.grid_customers.Name = "grid_customers"
+        Me.grid_customers.ReadOnly = True
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid_customers.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.grid_customers.RowHeadersWidth = 51
         Me.grid_customers.RowTemplate.Height = 24
+        Me.grid_customers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.grid_customers.Size = New System.Drawing.Size(430, 201)
         Me.grid_customers.TabIndex = 13
         '
@@ -164,6 +197,7 @@ Partial Class frm_insertcustomer_a173630
         '
         Me.txt_id.Location = New System.Drawing.Point(174, 360)
         Me.txt_id.Name = "txt_id"
+        Me.txt_id.ReadOnly = True
         Me.txt_id.Size = New System.Drawing.Size(341, 20)
         Me.txt_id.TabIndex = 42
         '

@@ -29,7 +29,6 @@
 
         refresh_grid_cart()
 
-
     End Sub
 
     Private Sub clear_fields()
@@ -54,16 +53,17 @@
 
     Private Function generate_id() As String
 
-
         Try
+
             Dim lastID As String = run_sql_query("SELECT MAX(FLD_ORDER_ID) AS LASTID FROM TBL_ORDER_A173630").Rows(0).Item("LASTID")
             Dim newID As String = "OID" & Mid(lastID, 4) + 1
             Return newID
+
         Catch ex As Exception
+
             Return "OID1"
 
         End Try
-
 
     End Function
 
@@ -130,7 +130,6 @@
         End Try
 
     End Sub
-
     Private Sub lb_productid_MouseClick(sender As Object, e As MouseEventArgs) Handles lb_productid.MouseClick
 
         get_product(lb_productid.Text)
@@ -181,7 +180,7 @@
         grid_cart.Columns(0).HeaderText = "Order ID"
         grid_cart.Columns(1).HeaderText = "Product ID"
         grid_cart.Columns(2).HeaderText = "Quantity"
-        grid_cart.Columns(3).HeaderText = "Price"
+        grid_cart.Columns(3).HeaderText = "Price (RM)"
 
     End Sub
 
@@ -196,8 +195,6 @@
         Catch ex As Exception
 
         End Try
-
-        'grid_cart.Rows.RemoveAt(grid_cart.SelectedRows(0).Index)
 
     End Sub
 
@@ -260,6 +257,5 @@
         frm_mainmenu_a173630.Show()
 
     End Sub
-
 
 End Class

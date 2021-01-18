@@ -81,6 +81,8 @@ Partial Class frm_updateproduct_a173630
         '
         Me.grid_products.AllowUserToAddRows = False
         Me.grid_products.AllowUserToDeleteRows = False
+        Me.grid_products.AllowUserToResizeColumns = False
+        Me.grid_products.AllowUserToResizeRows = False
         Me.grid_products.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.grid_products.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.grid_products.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -99,6 +101,7 @@ Partial Class frm_updateproduct_a173630
         Me.grid_products.ReadOnly = True
         Me.grid_products.RowHeadersWidth = 51
         Me.grid_products.RowTemplate.Height = 24
+        Me.grid_products.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.grid_products.Size = New System.Drawing.Size(1022, 258)
         Me.grid_products.TabIndex = 41
         '
@@ -278,6 +281,7 @@ Partial Class frm_updateproduct_a173630
         '
         Me.txt_id.Location = New System.Drawing.Point(490, 454)
         Me.txt_id.Name = "txt_id"
+        Me.txt_id.ReadOnly = True
         Me.txt_id.Size = New System.Drawing.Size(380, 20)
         Me.txt_id.TabIndex = 64
         '

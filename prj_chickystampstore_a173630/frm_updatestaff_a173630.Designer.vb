@@ -22,6 +22,8 @@ Partial Class frm_updatestaff_a173630
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_updatestaff_a173630))
         Me.lbl_name = New System.Windows.Forms.Label()
         Me.lbl_phone = New System.Windows.Forms.Label()
@@ -92,20 +94,43 @@ Partial Class frm_updatestaff_a173630
         '
         Me.txt_id.Location = New System.Drawing.Point(174, 360)
         Me.txt_id.Name = "txt_id"
+        Me.txt_id.ReadOnly = True
         Me.txt_id.Size = New System.Drawing.Size(341, 20)
         Me.txt_id.TabIndex = 46
         '
         'grid_staff
         '
+        Me.grid_staff.AllowUserToAddRows = False
+        Me.grid_staff.AllowUserToDeleteRows = False
+        Me.grid_staff.AllowUserToResizeColumns = False
+        Me.grid_staff.AllowUserToResizeRows = False
         Me.grid_staff.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.grid_staff.BackgroundColor = System.Drawing.SystemColors.ButtonFace
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid_staff.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.grid_staff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grid_staff.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grid_staff.DefaultCellStyle = DataGridViewCellStyle2
         Me.grid_staff.Location = New System.Drawing.Point(85, 144)
         Me.grid_staff.Margin = New System.Windows.Forms.Padding(2)
         Me.grid_staff.Name = "grid_staff"
+        Me.grid_staff.ReadOnly = True
         Me.grid_staff.RowHeadersWidth = 51
         Me.grid_staff.RowTemplate.Height = 24
+        Me.grid_staff.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.grid_staff.Size = New System.Drawing.Size(430, 201)
         Me.grid_staff.TabIndex = 45
         '

@@ -22,6 +22,8 @@ Partial Class frm_orderdetails_a173630
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_orderdetails_a173630))
         Me.btn_back = New System.Windows.Forms.Button()
         Me.lbl_title = New System.Windows.Forms.Label()
@@ -67,28 +69,50 @@ Partial Class frm_orderdetails_a173630
         Me.lbl_orderdetailslist.BackColor = System.Drawing.Color.Transparent
         Me.lbl_orderdetailslist.Font = New System.Drawing.Font("Times New Roman", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_orderdetailslist.ForeColor = System.Drawing.Color.Maroon
-        Me.lbl_orderdetailslist.Location = New System.Drawing.Point(198, 109)
+        Me.lbl_orderdetailslist.Location = New System.Drawing.Point(213, 109)
         Me.lbl_orderdetailslist.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_orderdetailslist.Name = "lbl_orderdetailslist"
-        Me.lbl_orderdetailslist.Size = New System.Drawing.Size(228, 31)
+        Me.lbl_orderdetailslist.Size = New System.Drawing.Size(175, 31)
         Me.lbl_orderdetailslist.TabIndex = 9
-        Me.lbl_orderdetailslist.Text = "Order Details List"
+        Me.lbl_orderdetailslist.Text = "Order Details"
         '
         'grid_orderdetails
         '
+        Me.grid_orderdetails.AllowUserToAddRows = False
+        Me.grid_orderdetails.AllowUserToDeleteRows = False
+        Me.grid_orderdetails.AllowUserToResizeColumns = False
+        Me.grid_orderdetails.AllowUserToResizeRows = False
         Me.grid_orderdetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.grid_orderdetails.BackgroundColor = System.Drawing.SystemColors.ButtonFace
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid_orderdetails.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.grid_orderdetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grid_orderdetails.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grid_orderdetails.DefaultCellStyle = DataGridViewCellStyle2
         Me.grid_orderdetails.Location = New System.Drawing.Point(86, 141)
         Me.grid_orderdetails.Margin = New System.Windows.Forms.Padding(2)
         Me.grid_orderdetails.Name = "grid_orderdetails"
+        Me.grid_orderdetails.ReadOnly = True
         Me.grid_orderdetails.RowHeadersWidth = 51
         Me.grid_orderdetails.RowTemplate.Height = 24
+        Me.grid_orderdetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.grid_orderdetails.Size = New System.Drawing.Size(430, 201)
         Me.grid_orderdetails.TabIndex = 10
         '
-        'frm_orderdetailslist_a173630
+        'frm_orderdetails_a173630
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -102,7 +126,7 @@ Partial Class frm_orderdetails_a173630
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
-        Me.Name = "frm_orderdetailslist_a173630"
+        Me.Name = "frm_orderdetails_a173630"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ORDER DETAILS LIST"
         CType(Me.grid_orderdetails, System.ComponentModel.ISupportInitialize).EndInit()

@@ -22,6 +22,10 @@ Partial Class frm_makeorder_a173630
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_makeorder_a173630))
         Me.lbl_title = New System.Windows.Forms.Label()
         Me.btn_back = New System.Windows.Forms.Button()
@@ -129,12 +133,14 @@ Partial Class frm_makeorder_a173630
         '
         'lb_productid
         '
+        Me.lb_productid.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.lb_productid.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lb_productid.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lb_productid.FormattingEnabled = True
-        Me.lb_productid.ItemHeight = 19
+        Me.lb_productid.ItemHeight = 20
         Me.lb_productid.Location = New System.Drawing.Point(11, 36)
         Me.lb_productid.Name = "lb_productid"
-        Me.lb_productid.Size = New System.Drawing.Size(104, 251)
+        Me.lb_productid.Size = New System.Drawing.Size(104, 244)
         Me.lb_productid.TabIndex = 7
         '
         'lbl_staffid
@@ -348,15 +354,37 @@ Partial Class frm_makeorder_a173630
         '
         'grid_customers
         '
+        Me.grid_customers.AllowUserToAddRows = False
+        Me.grid_customers.AllowUserToDeleteRows = False
+        Me.grid_customers.AllowUserToResizeColumns = False
+        Me.grid_customers.AllowUserToResizeRows = False
         Me.grid_customers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.grid_customers.BackgroundColor = System.Drawing.SystemColors.ButtonFace
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid_customers.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.grid_customers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grid_customers.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grid_customers.DefaultCellStyle = DataGridViewCellStyle2
         Me.grid_customers.Location = New System.Drawing.Point(5, 23)
         Me.grid_customers.Margin = New System.Windows.Forms.Padding(2)
         Me.grid_customers.Name = "grid_customers"
+        Me.grid_customers.ReadOnly = True
         Me.grid_customers.RowHeadersWidth = 51
         Me.grid_customers.RowTemplate.Height = 24
+        Me.grid_customers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.grid_customers.Size = New System.Drawing.Size(370, 131)
         Me.grid_customers.TabIndex = 65
         '
@@ -534,8 +562,24 @@ Partial Class frm_makeorder_a173630
         Me.grid_cart.AllowUserToResizeRows = False
         Me.grid_cart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.grid_cart.BackgroundColor = System.Drawing.SystemColors.ButtonFace
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid_cart.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.grid_cart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grid_cart.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grid_cart.DefaultCellStyle = DataGridViewCellStyle4
         Me.grid_cart.Location = New System.Drawing.Point(9, 24)
         Me.grid_cart.Margin = New System.Windows.Forms.Padding(2)
         Me.grid_cart.Name = "grid_cart"
@@ -594,7 +638,7 @@ Partial Class frm_makeorder_a173630
         Me.btn_confirmorder.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_confirmorder.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btn_confirmorder.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btn_confirmorder.Location = New System.Drawing.Point(375, 54)
+        Me.btn_confirmorder.Location = New System.Drawing.Point(375, 61)
         Me.btn_confirmorder.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_confirmorder.Name = "btn_confirmorder"
         Me.btn_confirmorder.Size = New System.Drawing.Size(116, 90)

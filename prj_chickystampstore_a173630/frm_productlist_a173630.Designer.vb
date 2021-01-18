@@ -76,6 +76,10 @@ Partial Class frm_productlist_a173630
         '
         'grid_products
         '
+        Me.grid_products.AllowUserToAddRows = False
+        Me.grid_products.AllowUserToDeleteRows = False
+        Me.grid_products.AllowUserToResizeColumns = False
+        Me.grid_products.AllowUserToResizeRows = False
         Me.grid_products.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.grid_products.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.grid_products.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -91,8 +95,10 @@ Partial Class frm_productlist_a173630
         Me.grid_products.Location = New System.Drawing.Point(27, 147)
         Me.grid_products.Margin = New System.Windows.Forms.Padding(2)
         Me.grid_products.Name = "grid_products"
+        Me.grid_products.ReadOnly = True
         Me.grid_products.RowHeadersWidth = 51
         Me.grid_products.RowTemplate.Height = 24
+        Me.grid_products.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.grid_products.Size = New System.Drawing.Size(1022, 258)
         Me.grid_products.TabIndex = 3
         '
