@@ -21,4 +21,5 @@ C:\Users\User\OneDrive\Desktop\FTSM SEIS UKM\Sem 3\TU2983 Advanced Databases\Lab
 C:\Users\User\OneDrive\Desktop\FTSM SEIS UKM\Sem 3\TU2983 Advanced Databases\Lab\a173630_chickystampstore\prj_chickystampstore_a173630\obj\Debug\prj_chickystampstore_a173630.frm_insertstaff_a173630.resources
 C:\Users\User\OneDrive\Desktop\FTSM SEIS UKM\Sem 3\TU2983 Advanced Databases\Lab\a173630_chickystampstore\prj_chickystampstore_a173630\obj\Debug\prj_chickystampstore_a173630.frm_makeorder_a173630.resources
 C:\Users\User\OneDrive\Desktop\FTSM SEIS UKM\Sem 3\TU2983 Advanced Databases\Lab\a173630_chickystampstore\prj_chickystampstore_a173630\obj\Debug\prj_chickystampstore_a173630.frm_vieworder_a173630.resources
-C:\Users\User\OneDrive\Desktop\FTSM SEIS UKM\Sem 3\TU2983 Advanced Databases\Lab\a173630_chickystampstore\prj_chickystampstore_a173630\obj\Debug\prj_chickystampstore_a173630.frm_orderdetails_a173630.resources
+C:\Users\User\OneDrive\Desktop\FTSM SEIS UKM\Sem 3\TU2983 Advanced Databases\Lab\a173630_chickystampstore\prj_chickystampstore_a173630\obj\Debug\prj_chickystampstore_a173630.frm_splashscreen_A173630.resources
+C:\Users\User\OneDrive\Desktop\FTSM SEIS UKM\Sem 3\TU2983 Advanced Databases\Lab\a173630_chickystampstore\prj_chickystampstore_a173630\obj\Debug\prj_chickystampstore_a173630.frm_order_a173630.resources

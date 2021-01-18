@@ -271,7 +271,7 @@ Partial Class frm_vieworder_a173630
         Me.txt_totalprice.AutoSize = True
         Me.txt_totalprice.BackColor = System.Drawing.Color.Transparent
         Me.txt_totalprice.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_totalprice.Location = New System.Drawing.Point(703, 602)
+        Me.txt_totalprice.Location = New System.Drawing.Point(703, 607)
         Me.txt_totalprice.Name = "txt_totalprice"
         Me.txt_totalprice.Size = New System.Drawing.Size(53, 22)
         Me.txt_totalprice.TabIndex = 55
@@ -283,7 +283,7 @@ Partial Class frm_vieworder_a173630
         Me.lbl_totalprice.BackColor = System.Drawing.Color.Transparent
         Me.lbl_totalprice.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_totalprice.ForeColor = System.Drawing.Color.Maroon
-        Me.lbl_totalprice.Location = New System.Drawing.Point(558, 602)
+        Me.lbl_totalprice.Location = New System.Drawing.Point(558, 607)
         Me.lbl_totalprice.Name = "lbl_totalprice"
         Me.lbl_totalprice.Size = New System.Drawing.Size(100, 22)
         Me.lbl_totalprice.TabIndex = 54
@@ -294,7 +294,7 @@ Partial Class frm_vieworder_a173630
         Me.lbl_rm.AutoSize = True
         Me.lbl_rm.BackColor = System.Drawing.Color.Transparent
         Me.lbl_rm.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_rm.Location = New System.Drawing.Point(658, 602)
+        Me.lbl_rm.Location = New System.Drawing.Point(658, 607)
         Me.lbl_rm.Name = "lbl_rm"
         Me.lbl_rm.Size = New System.Drawing.Size(42, 22)
         Me.lbl_rm.TabIndex = 56

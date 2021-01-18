@@ -47,7 +47,7 @@ Partial Class frm_mainmenu_a173630
         Me.timer_btnstaff = New System.Windows.Forms.Timer(Me.components)
         Me.panel_order = New System.Windows.Forms.Panel()
         Me.btn_makeorder = New System.Windows.Forms.Button()
-        Me.btn_orderdetails = New System.Windows.Forms.Button()
+        Me.btn_orderhistory = New System.Windows.Forms.Button()
         Me.btn_vieworder = New System.Windows.Forms.Button()
         Me.timer_btnorder = New System.Windows.Forms.Timer(Me.components)
         Me.panel_product.SuspendLayout()
@@ -366,7 +366,7 @@ Partial Class frm_mainmenu_a173630
         '
         Me.panel_order.BackColor = System.Drawing.Color.Transparent
         Me.panel_order.Controls.Add(Me.btn_makeorder)
-        Me.panel_order.Controls.Add(Me.btn_orderdetails)
+        Me.panel_order.Controls.Add(Me.btn_orderhistory)
         Me.panel_order.Controls.Add(Me.btn_vieworder)
         Me.panel_order.Controls.Add(Me.btn_order)
         Me.panel_order.Location = New System.Drawing.Point(441, 172)
@@ -392,22 +392,22 @@ Partial Class frm_mainmenu_a173630
         Me.btn_makeorder.Text = "Make Order"
         Me.btn_makeorder.UseVisualStyleBackColor = True
         '
-        'btn_orderdetails
+        'btn_orderhistory
         '
-        Me.btn_orderdetails.BackgroundImage = Global.prj_chickystampstore_a173630.My.Resources.Resources.background
-        Me.btn_orderdetails.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btn_orderdetails.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_orderdetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_orderdetails.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_orderdetails.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btn_orderdetails.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btn_orderdetails.Location = New System.Drawing.Point(0, 160)
-        Me.btn_orderdetails.Margin = New System.Windows.Forms.Padding(2)
-        Me.btn_orderdetails.Name = "btn_orderdetails"
-        Me.btn_orderdetails.Size = New System.Drawing.Size(118, 44)
-        Me.btn_orderdetails.TabIndex = 8
-        Me.btn_orderdetails.Text = "Order Details"
-        Me.btn_orderdetails.UseVisualStyleBackColor = True
+        Me.btn_orderhistory.BackgroundImage = Global.prj_chickystampstore_a173630.My.Resources.Resources.background
+        Me.btn_orderhistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_orderhistory.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_orderhistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_orderhistory.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_orderhistory.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btn_orderhistory.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btn_orderhistory.Location = New System.Drawing.Point(0, 160)
+        Me.btn_orderhistory.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_orderhistory.Name = "btn_orderhistory"
+        Me.btn_orderhistory.Size = New System.Drawing.Size(118, 44)
+        Me.btn_orderhistory.TabIndex = 8
+        Me.btn_orderhistory.Text = "Order History"
+        Me.btn_orderhistory.UseVisualStyleBackColor = True
         '
         'btn_vieworder
         '
@@ -480,7 +480,7 @@ Partial Class frm_mainmenu_a173630
     Friend WithEvents timer_btnstaff As Timer
     Friend WithEvents panel_order As Panel
     Friend WithEvents btn_makeorder As Button
-    Friend WithEvents btn_orderdetails As Button
+    Friend WithEvents btn_orderhistory As Button
     Friend WithEvents btn_vieworder As Button
     Friend WithEvents timer_btnorder As Timer
 End Class

@@ -162,6 +162,8 @@
                 row.Cells(3).Value = row.Cells(2).Value * txt_price.Text
                 txt_totalprice.Text = Val(txt_subtotal.Text) + Val(txt_totalprice.Text)
                 num_quantity.Value = 0
+                txt_subtotal.Text = ""
+                txt_productprice.Text = ""
                 Return
 
             End If
@@ -171,6 +173,8 @@
         grid_cart.Rows.Add(txt_orderid.Text, txt_id.Text, num_quantity.Value, txt_subtotal.Text)
         txt_totalprice.Text = Val(txt_subtotal.Text) + Val(txt_totalprice.Text)
         num_quantity.Value = 0
+        txt_subtotal.Text = ""
+        txt_productprice.Text = ""
 
     End Sub
 
@@ -233,6 +237,8 @@
             Beep()
             MsgBox("Transaction succesful!")
             grid_cart.Rows.Clear()
+
+            txt_orderid.Text = generate_id()
 
         Catch ex As Exception
 

@@ -158,9 +158,9 @@
 
     End Sub
 
-    Private Sub btn_orderdetails_Click(sender As Object, e As EventArgs) Handles btn_orderdetails.Click
+    Private Sub btn_orderdetails_Click(sender As Object, e As EventArgs) Handles btn_orderhistory.Click
 
-        frm_orderdetails_a173630.Show()
+        frm_order_a173630.Show()
         Me.Hide()
 
     End Sub
@@ -178,5 +178,9 @@
 
     End Sub
 
+    Private Sub frm_mainmenu_a173630_Closed(sender As Object, e As EventArgs) Handles Me.Closed
 
+        frm_splashscreen_A173630.Show()
+
+    End Sub
 End Class

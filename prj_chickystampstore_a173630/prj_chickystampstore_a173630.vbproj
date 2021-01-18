@@ -113,10 +113,16 @@
     <Compile Include="frm_makeorder_a173630.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_orderdetails_a173630.Designer.vb">
-      <DependentUpon>frm_orderdetails_a173630.vb</DependentUpon>
+    <Compile Include="frm_order_a173630.Designer.vb">
+      <DependentUpon>frm_order_a173630.vb</DependentUpon>
     </Compile>
-    <Compile Include="frm_orderdetails_a173630.vb">
+    <Compile Include="frm_order_a173630.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_splashscreen_A173630.Designer.vb">
+      <DependentUpon>frm_splashscreen_A173630.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_splashscreen_A173630.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_vieworder_a173630.Designer.vb">
@@ -192,8 +198,11 @@
     <EmbeddedResource Include="frm_makeorder_a173630.resx">
       <DependentUpon>frm_makeorder_a173630.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_orderdetails_a173630.resx">
-      <DependentUpon>frm_orderdetails_a173630.vb</DependentUpon>
+    <EmbeddedResource Include="frm_order_a173630.resx">
+      <DependentUpon>frm_order_a173630.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_splashscreen_A173630.resx">
+      <DependentUpon>frm_splashscreen_A173630.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_vieworder_a173630.resx">
       <DependentUpon>frm_vieworder_a173630.vb</DependentUpon>
@@ -240,6 +249,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="iconstamp.ico" />
+    <None Include="Resources\home.png" />
     <None Include="Resources\checkout.jpg" />
     <None Include="Resources\gpboxbackground.jpg" />
     <None Include="Resources\backbutton.png" />

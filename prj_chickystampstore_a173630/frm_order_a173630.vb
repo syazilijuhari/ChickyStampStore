@@ -1,4 +1,4 @@
-﻿Public Class frm_orderdetails_a173630
+﻿Public Class frm_order_a173630
     Private Sub frm_orderdetailslist_a173630_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim mysql As String = "SELECT *  FROM TBL_ORDER_A173630"
