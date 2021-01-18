@@ -235,7 +235,7 @@
             myconnection2.Close()
 
             Beep()
-            MsgBox("Transaction succesful!")
+            MsgBox("Order received!")
             grid_cart.Rows.Clear()
 
             txt_orderid.Text = generate_id()
