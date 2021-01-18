@@ -606,7 +606,7 @@ Partial Class frm_makeorder_a173630
         Me.btn_confirmorder.Location = New System.Drawing.Point(375, 61)
         Me.btn_confirmorder.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_confirmorder.Name = "btn_confirmorder"
-        Me.btn_confirmorder.Size = New System.Drawing.Size(116, 90)
+        Me.btn_confirmorder.Size = New System.Drawing.Size(116, 83)
         Me.btn_confirmorder.TabIndex = 38
         Me.btn_confirmorder.Text = "CONFIRM ORDER"
         Me.btn_confirmorder.UseVisualStyleBackColor = True
