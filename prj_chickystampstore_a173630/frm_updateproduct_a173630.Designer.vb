@@ -322,6 +322,7 @@ Partial Class frm_updateproduct_a173630
         Me.Controls.Add(Me.grid_products)
         Me.Controls.Add(Me.btn_back)
         Me.Controls.Add(Me.lbl_title)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frm_updateproduct_a173630"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

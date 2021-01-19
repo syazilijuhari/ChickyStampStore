@@ -100,6 +100,7 @@ Partial Class frm_splashscreen_A173630
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lbl_mainmenu)
         Me.Controls.Add(Me.lbl_title)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False

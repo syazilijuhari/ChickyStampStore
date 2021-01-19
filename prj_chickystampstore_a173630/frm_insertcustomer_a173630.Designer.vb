@@ -219,6 +219,7 @@ Partial Class frm_insertcustomer_a173630
         Me.Controls.Add(Me.lbl_insertcustomer)
         Me.Controls.Add(Me.lbl_title)
         Me.Controls.Add(Me.btn_back)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frm_insertcustomer_a173630"

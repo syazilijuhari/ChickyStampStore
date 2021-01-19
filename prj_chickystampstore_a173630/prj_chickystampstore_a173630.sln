@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "prj_chickystampstore_a173630", "prj_chickystampstore_a173630.vbproj", "{B7C324FA-1182-4164-BD19-91EC69FECA17}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup_ChickyStampStore_a173630", "..\Setup_ChickyStampStore_a173630\Setup_ChickyStampStore_a173630.vdproj", "{9D786BAD-3201-4281-80C4-F163B20C30A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{B7C324FA-1182-4164-BD19-91EC69FECA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7C324FA-1182-4164-BD19-91EC69FECA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7C324FA-1182-4164-BD19-91EC69FECA17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D786BAD-3201-4281-80C4-F163B20C30A6}.Debug|Any CPU.ActiveCfg = Debug
+		{9D786BAD-3201-4281-80C4-F163B20C30A6}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

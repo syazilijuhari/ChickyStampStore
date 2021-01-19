@@ -123,6 +123,7 @@ Partial Class frm_order_a173630
         Me.Controls.Add(Me.lbl_orderdetailslist)
         Me.Controls.Add(Me.lbl_title)
         Me.Controls.Add(Me.btn_back)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False

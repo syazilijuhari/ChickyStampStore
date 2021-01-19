@@ -287,6 +287,7 @@ Partial Class frm_productlist_a173630
         Me.Controls.Add(Me.grid_products)
         Me.Controls.Add(Me.lbl_productlist)
         Me.Controls.Add(Me.lbl_title)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False

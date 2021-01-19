@@ -358,6 +358,7 @@ Partial Class frm_insertproduct_a173630
         Me.Controls.Add(Me.grid_products)
         Me.Controls.Add(Me.btn_back)
         Me.Controls.Add(Me.lbl_title)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frm_insertproduct_a173630"

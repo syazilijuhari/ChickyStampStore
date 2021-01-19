@@ -226,6 +226,7 @@ Partial Class frm_updatecustomer_a173630
         Me.Controls.Add(Me.lbl_updatecustomer)
         Me.Controls.Add(Me.lbl_title)
         Me.Controls.Add(Me.btn_back)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frm_updatecustomer_a173630"

@@ -442,6 +442,7 @@ Partial Class frm_mainmenu_a173630
         Me.Controls.Add(Me.panel_product)
         Me.Controls.Add(Me.lbl_mainmenu)
         Me.Controls.Add(Me.lbl_title)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
