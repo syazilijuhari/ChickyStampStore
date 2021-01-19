@@ -1,2 +1,2 @@
 # ChickyStampStore
-Database Project Assignment
+Advanced Databases Project Assignment
